@@ -2,24 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>0xgoku1 | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>0xg0ku1 | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>0xgoku1</h1>
-    <p>Application Security | Pentesting | Bug Bounty</p>
+  <div class="desktop"></div>
 
-    <h2>Writeups</h2>
-    <ul>
-      <li><a href="https://example.com/writeup1" target="_blank">HTB - Shocker</a></li>
-      <li><a href="https://example.com/writeup2" target="_blank">Web Challenge - IDOR Case</a></li>
-    </ul>
-
-    <h2>Contact</h2>
-    <p>Email: 0xgoku1@example.com</p>
-    <p>GitHub: <a href="https://github.com/0xg0ku1" target="_blank">github.com/0xg0ku1</a></p>
+  <!-- Terminal Window -->
+  <div class="terminal" id="terminal" style="display: none;">
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="path">gokul@kali:~</span>
+    </div>
+    <div class="terminal-body" id="terminal-body">
+      <form id="terminal-form" onsubmit="return false;">
+        <label class="line">
+          <span class="prompt">❯</span>
+          <input type="text" id="terminal-input" autocomplete="off" autofocus />
+        </label>
+      </form>
+      <div id="terminal-output"></div>
+    </div>
   </div>
+
+  <!-- Taskbar -->
+  <div class="taskbar">
+    <div class="task-icons">
+    <img src="C:\Users\gokul\Workspace\0xgoku1\assets\terminal.png" alt="Terminal" class="task-icon" id="open-terminal">
+    <img src="C:\Users\gokul\Workspace\0xgoku1\assets\file-management.png" alt="Files" class="task-icon" data-app="files">
+    <img src="C:\Users\gokul\Workspace\0xgoku1\assets\chrome.png" alt="Browser" class="task-icon" data-app="browser">
+    <img src="C:\Users\gokul\Workspace\0xgoku1\assets\settings.png" alt="Settings" class="task-icon" data-app="settings">
+    </div>
+    <div class="task-status">
+      <span>🔉</span>
+      <span>🔋</span>
+      <span id="taskbar-time"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
