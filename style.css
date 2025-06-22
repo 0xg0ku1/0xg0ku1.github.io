@@ -12,7 +12,7 @@ body {
   overflow: hidden;
 }
 .desktop {
-  background: url('https://www.kali.org/wallpapers/images/2020.4/kali-nova.png') no-repeat center center;
+  background: url('https://raw.githubusercontent.com/0xg0ku1/0xg0ku1.github.io/refs/heads/main/assets/kali-nova.png') no-repeat center center;
   background-size: cover;
   position: absolute;
   top: 0; left: 0;
