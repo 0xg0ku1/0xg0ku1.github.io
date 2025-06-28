@@ -30,7 +30,7 @@ form.addEventListener('submit', () => {
 
   const commandLine = document.createElement('p');
   commandLine.className = 'line';
-  commandLine.innerHTML = `<span class="prompt">❯</span> ${command}`;
+  commandLine.innerText = `<span class="prompt">❯</span> ${command}`;
   terminalBody.insertBefore(commandLine, form);
 
   input.value = '';
