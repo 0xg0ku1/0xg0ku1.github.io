@@ -66,7 +66,7 @@ function clearTerminal() {
   lines.forEach(el => {
     if (!el.contains(input)) el.remove();
   });
-  output.innerHTML = '';
+  output.innerText = '';
 }
 
 // Handle clicks on non-terminal icons
@@ -85,7 +85,7 @@ function showPermissionDenied(appName) {
 
   const dialog = document.createElement('div');
   dialog.id = 'permission-denied';
-  dialog.innerHTML = `
+  dialog.innerText = `
     <div class="dialog-box">
       <h3>Permission Denied</h3>
       <p>You do not have permission to run <b>${appName}</b>.</p>
